@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     [SerializeField] public int time = 0;
+    [SerializeField] public int scoreByTime = 250;
     public int gameDifficulty = 1;
     public bool gameOver;
+
 
     [SerializeField] int score;
     public int Score
@@ -17,7 +19,7 @@ public class GameManager : MonoBehaviour
         {
             score = value;
             UIManager.Instance.UpdateUIScore(score);
-            if (score % 1000 == 0)
+            if (score % 10000 == 0)
                 gameDifficulty++;
 
         }
@@ -38,9 +40,9 @@ public class GameManager : MonoBehaviour
         while (time > 0)
         {
             UIManager.Instance.UpdateUITime(time);
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(0.4f);
             time++;
-            Score += 1000;
+            Score += scoreByTime;
         }
         //UIManager.Instance.ShowGameOverScreen();
 

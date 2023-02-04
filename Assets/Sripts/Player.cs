@@ -5,17 +5,19 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     float vertical, horizontal;
+    [SerializeField] float lockHorizontal;
+    [SerializeField] float lockVertical;
     Vector3 moveDirection;
-    public float speed = 3;
-    public float vspSeed = 1.5f;
+    public float speed = 1;
     [SerializeField] Transform aim;
     [SerializeField] new Camera camera;
     Vector2 facingDirection;
     [SerializeField] Transform bulletPrefab;
-    [SerializeField] public float fireRate = 1;
-    [SerializeField] int health = 10;
-    [SerializeField] bool powerShotEnabled;
-    [SerializeField] bool isInvulnerable;
+    [SerializeField] int health = 3;
+    [SerializeField] bool isSlow;
+    [SerializeField] float slowRate = 0.1f;
+    [SerializeField] int extraPoints = 500;
+    [SerializeField] float stepper = 0.1f;
 
     bool gunLoaded = true;
     public int Health {
@@ -34,17 +36,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        moveDirection.x = horizontal;
-        moveDirection.y = 0;
-        transform.position += moveDirection * Time.deltaTime * speed;
-        StartCoroutine(moveDown());
+        StartCoroutine(move());
     }
     public void TakeDamage()
     {
 
-        if (isInvulnerable)
-            return;
         Health--;
 
         if (Health <= 0)
@@ -53,26 +49,37 @@ public class Player : MonoBehaviour
             UIManager.Instance.ShowGameOverScreen();
         }
     }
-
-    IEnumerator ReloadGun()
+     IEnumerator move()
     {
-        yield return new WaitForSeconds(1 / fireRate);
-        gunLoaded = true;
-    }
+        yield return new WaitForSeconds(1);
 
-     IEnumerator moveDown()
-    {
-        yield return new WaitForSeconds(2);
-        moveDirection.y = vspSeed;
-        moveDirection.x = 0;
-        transform.position -= moveDirection * Time.deltaTime;
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+        if(horizontal != 0 && lockHorizontal==0)
+        {
+            lockHorizontal = Mathf.Sign(horizontal)* stepper;
+            lockVertical= 0;
+        } else if(vertical < 0 && lockVertical == 0){
+            lockHorizontal = 0;
+            lockVertical = Mathf.Sign(vertical) * stepper;
+        }
+        moveDirection.x = lockHorizontal;
+        moveDirection.y = lockVertical;
+        if(isSlow){
+            transform.position += moveDirection * Time.deltaTime * ((speed+ GameManager.Instance.gameDifficulty) * slowRate);
+            
+        } else{
+
+            transform.position += moveDirection * Time.deltaTime * (speed + GameManager.Instance.gameDifficulty) ;
+                    
+        }
     }
 
     IEnumerator Invulnerable()
     {
-        isInvulnerable = true;
+        isSlow = true;
         yield return new WaitForSeconds(3);
-        isInvulnerable = false;
+        isSlow = false;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -80,14 +87,15 @@ public class Player : MonoBehaviour
         {
             switch (other.GetComponent<PowerUp>().powerUpType)
             {
-                case PowerUp.PowerUpType.FireRateIncrease:
-                    fireRate++;
+                case PowerUp.PowerUpType.IncreaseHealth:
+                    //fireRate++;
                     break;
-                case PowerUp.PowerUpType.PowerShot:
-                    powerShotEnabled = true;
-                    break;
-                case PowerUp.PowerUpType.Invulnerability:
+                case PowerUp.PowerUpType.ReduceSpeed:
+                    //powerShotEnabled = true;
                     StartCoroutine(Invulnerable());
+                    break;
+                case PowerUp.PowerUpType.ExtraPoints:
+                    GameManager.Instance.Score+= extraPoints;
                     break;
             }
             Destroy(other.gameObject, 0.1f);
