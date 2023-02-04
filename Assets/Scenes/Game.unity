@@ -4268,7 +4268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed77bda4cee6e446386186c73ebe5998, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 30
+  time: 1
   gameDifficulty: 1
   gameOver: 0
   score: 0

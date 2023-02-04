@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
             UIManager.Instance.UpdateUIHealth(health);
         }
     }
+
     void Start()
     {
         UIManager.Instance.UpdateUIHealth(Health);

@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    [SerializeField] public int time = 30;
+    [SerializeField] public int time = 0;
     public int gameDifficulty = 1;
     public bool gameOver;
 
@@ -39,11 +39,10 @@ public class GameManager : MonoBehaviour
         {
             UIManager.Instance.UpdateUITime(time);
             yield return new WaitForSeconds(1);
-            time--;
-
+            time++;
+            Score += 1000;
         }
-        gameOver = true;
-        UIManager.Instance.ShowGameOverScreen();
+        //UIManager.Instance.ShowGameOverScreen();
 
     }
 

@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Checkpoint : MonoBehaviour
+public class Gold : MonoBehaviour
 {
-    [SerializeField] int addedTime = 10;
+    [SerializeField] int addedScore = 1000;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            //GameManager.Instance.time+=addedTime;
-            Destroy(gameObject,0.1f);
+            GameManager.Instance.Score += addedScore;
+            Destroy(gameObject, 0.1f);
         }
     }
 }
