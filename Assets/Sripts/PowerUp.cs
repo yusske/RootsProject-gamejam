@@ -4,9 +4,9 @@ public class PowerUp : MonoBehaviour
 {
     public enum PowerUpType
     {
-        FireRateIncrease,
-        PowerShot,
-        Invulnerability
+        IncreaseHealth,
+        ReduceSpeed,
+        ExtraPoints
 
 
     }
