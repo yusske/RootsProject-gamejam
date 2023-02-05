@@ -13,7 +13,7 @@ public class EnemySpawnController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(1);
             float random = Random.Range(0.0f, 1.0f);
             if (random < GameManager.Instance.gameDifficulty * 0.1f)
             {
