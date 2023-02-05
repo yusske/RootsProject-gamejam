@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float lockHorizontal;
     [SerializeField] float lockVertical;
     Vector3 moveDirection;
-    public float speed = 1;
+    public float speed = 1.0f;
     [SerializeField] Transform aim;
     [SerializeField] new Camera camera;
     Vector2 facingDirection;
@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] int extraPoints = 500;
     [SerializeField] float stepper = 0.1f;
     [SerializeField] int choke = 0;
+
 
     bool gunLoaded = true;
     public int Health {
@@ -32,12 +33,15 @@ public class Player : MonoBehaviour
     void Start()
     {
         UIManager.Instance.UpdateUIHealth(Health);
+        StartCoroutine(move());
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(move());
+        horizontal = Input.GetAxis("Horizontal");
+        vertical = Input.GetAxis("Vertical");
     }
     public void TakeDamage()
     {
@@ -52,27 +56,38 @@ public class Player : MonoBehaviour
     }
      IEnumerator move()
     {
-        yield return new WaitForSeconds(1);
+        while (true){
 
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
+        float aspeed = 1.0f/GameManager.Instance.gameDifficulty;
+
+        yield return new WaitForSeconds(aspeed);
+
+   
         if(horizontal != 0 && lockHorizontal==0)
         {
-            lockHorizontal = Mathf.Sign(horizontal)* stepper;
+            float sign = Mathf.Sign(horizontal);
+            if(sign < 0.0){
+                transform.rotation = Quaternion.Euler(new Vector3(0,0,-90));
+            } 
+            else {
+                 transform.rotation = Quaternion.Euler(new Vector3(0,0,90));
+            }
+            lockHorizontal = sign;
             lockVertical= 0;
         } else if(vertical < 0 && lockVertical == 0){
             lockHorizontal = 0;
-            lockVertical = Mathf.Sign(vertical) * stepper;
+            lockVertical = Mathf.Sign(vertical);
+            transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
+
         }
         moveDirection.x = lockHorizontal;
         moveDirection.y = lockVertical;
-        if(isSlow){
+        /*if(isSlow){
             transform.position += moveDirection * Time.deltaTime * ((speed+ GameManager.Instance.gameDifficulty) * slowRate);
             
         } else{
-
-            transform.position += moveDirection * Time.deltaTime * (speed + GameManager.Instance.gameDifficulty) ;
-                    
+        }*/
+            transform.position += moveDirection; //* Time.deltaTime * (speed + GameManager.Instance.gameDifficulty) ;
         }
     }
 

@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
     [SerializeField] public int time = 0;
     [SerializeField] public int scoreByTime = 250;
-    public int gameDifficulty = 1;
+    public float gameDifficulty = 1.0f;
     public bool gameOver;
 
 
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
             score = value;
             UIManager.Instance.UpdateUIScore(score);
             if (score % 10000 == 0)
-                gameDifficulty++;
+                gameDifficulty+=1.0f;
 
         }
     }
