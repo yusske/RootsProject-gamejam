@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] int extraPoints = 500;
      [SerializeField] GameObject[] rootPrefabs;
      [SerializeField] GameObject codito;
+    [SerializeField] AudioClip itemClip;
 
     bool gunLoaded = true;
     public int Health {
@@ -95,6 +96,7 @@ public class Player : MonoBehaviour
     {
         if (other.CompareTag("PowerUp"))
         {
+            AudioSource.PlayClipAtPoint(itemClip,transform.position);
             switch (other.GetComponent<PowerUp>().powerUpType)
             {
                 case PowerUp.PowerUpType.IncreaseHealth:

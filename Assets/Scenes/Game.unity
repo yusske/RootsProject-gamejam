@@ -354,6 +354,7 @@ MonoBehaviour:
   - {fileID: 8012668363051708324, guid: c32a1d1ccc8fe40ba9b543fa507d9acd, type: 3}
   - {fileID: 4127897106811403255, guid: 79c19f6525b494246b7cd73958f92fbb, type: 3}
   codito: {fileID: 5658571543106421569, guid: 5e0d6f11732f34410917987c1783bd34, type: 3}
+  itemClip: {fileID: 8300000, guid: d8a5b82168e1f384ba245d490355197c, type: 3}
 --- !u!212 &45359167
 SpriteRenderer:
   m_ObjectHideFlags: 0
