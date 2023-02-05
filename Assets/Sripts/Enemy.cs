@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] int health = 1;
     [SerializeField] int scorePoints = 100;
+    [SerializeField] AudioClip impactClip;
     
     Transform player;
     
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage()
     {
         health--;
+        AudioSource.PlayClipAtPoint(impactClip,transform.position);
 
         if (health <= 0)
         {

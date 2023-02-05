@@ -96,6 +96,7 @@ MonoBehaviour:
   speed: 1
   health: 1
   scorePoints: 100
+  impactClip: {fileID: 8300000, guid: de9e33dbe81a91342af9c9c7fdbd5680, type: 3}
 --- !u!1 &8024430899124983276
 GameObject:
   m_ObjectHideFlags: 0
