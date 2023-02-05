@@ -19,11 +19,15 @@ public class EnemySpawnController : MonoBehaviour
             {
                 Instantiate(enemyPrefab[0]);
                 Instantiate(enemyPrefab[1]);
+                Instantiate(enemyPrefab[2]);
+                Instantiate(enemyPrefab[3]);
             }
             else
             {
-                Instantiate(enemyPrefab[1]);
-                Instantiate(enemyPrefab[0]);
+                Instantiate(enemyPrefab[4]);
+                Instantiate(enemyPrefab[5]);
+                Instantiate(enemyPrefab[6]);
+                Instantiate(enemyPrefab[7]);
 
             }
         }

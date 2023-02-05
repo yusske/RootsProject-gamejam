@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
             switch (other.GetComponent<PowerUp>().powerUpType)
             {
                 case PowerUp.PowerUpType.IncreaseHealth:
-                    //fireRate++;
+                    //health+=;
                     break;
                 case PowerUp.PowerUpType.ReduceSpeed:
                     //powerShotEnabled = true;
