@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
      [SerializeField] GameObject[] rootPrefabs;
      [SerializeField] GameObject codito;
     [SerializeField] AudioClip itemClip;
+    [SerializeField] AudioClip impactClip;
+    [SerializeField] int choke = 0;
 
     bool gunLoaded = true;
     public int Health {
@@ -47,7 +49,7 @@ public class Player : MonoBehaviour
     {
 
         Health--;
-
+        AudioSource.PlayClipAtPoint(impactClip, transform.position);
         if (Health <= 0)
         {
             GameManager.Instance.gameOver = true;
@@ -100,9 +102,11 @@ public class Player : MonoBehaviour
             switch (other.GetComponent<PowerUp>().powerUpType)
             {
                 case PowerUp.PowerUpType.IncreaseHealth:
-                    if (health < 3)
+                    choke++;
+                    while (Health < 3 && choke == 5)
                     {
-                        health+=health;
+                        Health++;
+                        choke = 0;
                     }
                     //health+=;
                     break;

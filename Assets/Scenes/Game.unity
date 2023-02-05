@@ -355,6 +355,7 @@ MonoBehaviour:
   - {fileID: 4127897106811403255, guid: 79c19f6525b494246b7cd73958f92fbb, type: 3}
   codito: {fileID: 5658571543106421569, guid: 5e0d6f11732f34410917987c1783bd34, type: 3}
   itemClip: {fileID: 8300000, guid: d8a5b82168e1f384ba245d490355197c, type: 3}
+  impactClip: {fileID: 8300000, guid: de9e33dbe81a91342af9c9c7fdbd5680, type: 3}
 --- !u!212 &45359167
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1389,6 +1390,7 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1609,6 +1611,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05dcfee5abdde8048af41501ec345d63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClips:
+  - {fileID: 8300000, guid: a517bb785469e394fa202c444fc62ba1, type: 3}
+  - {fileID: 8300000, guid: 4e2f4305573cfb54db55ffeb81db5ad4, type: 3}
+  - {fileID: 8300000, guid: 6e50d3f3f1ab9d14898a5098352ea8a1, type: 3}
 --- !u!1 &573321701
 GameObject:
   m_ObjectHideFlags: 0
