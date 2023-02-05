@@ -13,7 +13,6 @@ public class ItemSpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(SpawnCheckpoint());
         StartCoroutine(SpawnPowerUp());
     }
 

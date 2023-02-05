@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int scoreByTime = 250;
     public float gameDifficulty = 1.0f;
     public bool gameOver;
+    AudioSource[] allAudios;
 
 
     [SerializeField] int score;
@@ -20,8 +21,26 @@ public class GameManager : MonoBehaviour
             score = value;
             UIManager.Instance.UpdateUIScore(score);
             if (score % 10000 == 0)
+            {    
                 gameDifficulty+=1.0f;
-
+                updateAudio();
+            }
+        }
+    }
+    private void updateAudio(){
+    if (gameDifficulty > 8.0f){
+            allAudios[0].Stop();
+            allAudios[1].Stop();
+             if(!allAudios[2].isPlaying) allAudios[2].Play();
+        }
+        else if (gameDifficulty > 4.0f){
+            allAudios[0].Stop();
+             if(!allAudios[1].isPlaying) allAudios[1].Play();
+            allAudios[2].Stop();
+        } else {
+            if(!allAudios[0].isPlaying) allAudios[0].Play();
+            allAudios[1].Stop();
+            allAudios[2].Stop();
         }
     }
     private void Awake()
@@ -33,6 +52,7 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        allAudios = Camera.main.gameObject.GetComponents<AudioSource>();
         StartCoroutine(CountDownRime());
     }
     IEnumerator CountDownRime()

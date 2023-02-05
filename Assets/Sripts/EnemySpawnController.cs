@@ -13,7 +13,7 @@ public class EnemySpawnController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
             float random = Random.Range(0.0f, 1.0f);
             if (random < GameManager.Instance.gameDifficulty * 0.1f)
             {
@@ -21,10 +21,10 @@ public class EnemySpawnController : MonoBehaviour
                 Instantiate(enemyPrefab[1]);
                 Instantiate(enemyPrefab[2]);
                 Instantiate(enemyPrefab[3]);
+                Instantiate(enemyPrefab[4]);
             }
             else
             {
-                Instantiate(enemyPrefab[4]);
                 Instantiate(enemyPrefab[5]);
                 Instantiate(enemyPrefab[6]);
                 Instantiate(enemyPrefab[7]);
