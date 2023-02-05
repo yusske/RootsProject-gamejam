@@ -1,7 +1,367 @@
 fileFormatVersion: 2
 guid: fdd8d436c14e43840af0d4e3a4440f64
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3422227721096765191
+    second: imagenes_0
+  - first:
+      213: -2985376900133497765
+    second: imagenes_1
+  - first:
+      213: 3528828026954637004
+    second: imagenes_2
+  - first:
+      213: -2898892972858532416
+    second: imagenes_3
+  - first:
+      213: -5128932570251115353
+    second: imagenes_4
+  - first:
+      213: -1816089199294943461
+    second: imagenes_5
+  - first:
+      213: 7290590127709815387
+    second: imagenes_6
+  - first:
+      213: -4706533732480124919
+    second: imagenes_7
+  - first:
+      213: -7981531033476603112
+    second: imagenes_8
+  - first:
+      213: -29172879421880377
+    second: imagenes_9
+  - first:
+      213: -6357739649929373215
+    second: imagenes_10
+  - first:
+      213: 3276924884229575488
+    second: imagenes_11
+  - first:
+      213: 5509410233602091440
+    second: imagenes_12
+  - first:
+      213: -7556288356510244111
+    second: imagenes_13
+  - first:
+      213: 8990150624623748231
+    second: imagenes_14
+  - first:
+      213: -2302850049765492492
+    second: imagenes_15
+  - first:
+      213: -6924021964516456313
+    second: imagenes_16
+  - first:
+      213: -7331498044060220968
+    second: imagenes_17
+  - first:
+      213: -4165334972394382604
+    second: imagenes_18
+  - first:
+      213: 7159829307233934897
+    second: imagenes_19
+  - first:
+      213: 1449999802528216838
+    second: imagenes_20
+  - first:
+      213: -3663203918078371993
+    second: imagenes_21
+  - first:
+      213: -4227156209168630762
+    second: imagenes_22
+  - first:
+      213: -9167545890324396061
+    second: imagenes_23
+  - first:
+      213: -3288612951078116491
+    second: imagenes_24
+  - first:
+      213: 70428432665715675
+    second: imagenes_25
+  - first:
+      213: 6653260347261574993
+    second: imagenes_26
+  - first:
+      213: 7799229147030004393
+    second: imagenes_27
+  - first:
+      213: 1222626413439011491
+    second: imagenes_28
+  - first:
+      213: -5306408728408999355
+    second: imagenes_29
+  - first:
+      213: 3187271324211159600
+    second: imagenes_30
+  - first:
+      213: 2863885916687164983
+    second: imagenes_31
+  - first:
+      213: 3120301343753053174
+    second: imagenes_32
+  - first:
+      213: -8498182078070536704
+    second: imagenes_33
+  - first:
+      213: -6636344507863262243
+    second: imagenes_34
+  - first:
+      213: -5514173829499266023
+    second: imagenes_35
+  - first:
+      213: 534648304718986196
+    second: imagenes_36
+  - first:
+      213: 997889907306625124
+    second: imagenes_37
+  - first:
+      213: -2013337584444881935
+    second: imagenes_38
+  - first:
+      213: 396122242978651001
+    second: imagenes_39
+  - first:
+      213: 4593116459677604662
+    second: imagenes_40
+  - first:
+      213: 530245407290358919
+    second: imagenes_41
+  - first:
+      213: 2861625339826252118
+    second: imagenes_42
+  - first:
+      213: 6405396344057879199
+    second: imagenes_43
+  - first:
+      213: 4537036266777406900
+    second: imagenes_44
+  - first:
+      213: -2824720961578826559
+    second: imagenes_45
+  - first:
+      213: -7891321430789182719
+    second: imagenes_46
+  - first:
+      213: -1009241490678613466
+    second: imagenes_47
+  - first:
+      213: 4943946686579689591
+    second: imagenes_48
+  - first:
+      213: -3437181549463615435
+    second: imagenes_49
+  - first:
+      213: 7749656577794785431
+    second: imagenes_50
+  - first:
+      213: -3883258365345223457
+    second: imagenes_51
+  - first:
+      213: -6821035391953944269
+    second: imagenes_52
+  - first:
+      213: -2937883221936194939
+    second: imagenes_53
+  - first:
+      213: 3499902702756149766
+    second: imagenes_54
+  - first:
+      213: 3500901670013370042
+    second: imagenes_55
+  - first:
+      213: -4528325440644794979
+    second: imagenes_56
+  - first:
+      213: 9183889291495423039
+    second: imagenes_57
+  - first:
+      213: 1613221938144783049
+    second: imagenes_58
+  - first:
+      213: -5783266530186680307
+    second: imagenes_59
+  - first:
+      213: -3315959160094217771
+    second: imagenes_60
+  - first:
+      213: 2465133247085158870
+    second: imagenes_61
+  - first:
+      213: -1333436229747221228
+    second: imagenes_62
+  - first:
+      213: -1994663365630379830
+    second: imagenes_63
+  - first:
+      213: 8870089526279358914
+    second: imagenes_64
+  - first:
+      213: -1722248531605108265
+    second: imagenes_65
+  - first:
+      213: 7340514216819344243
+    second: imagenes_66
+  - first:
+      213: -7698479468632606989
+    second: imagenes_67
+  - first:
+      213: 5432055726249754296
+    second: imagenes_68
+  - first:
+      213: -3007954537895167548
+    second: imagenes_69
+  - first:
+      213: 1469370498813713668
+    second: imagenes_70
+  - first:
+      213: 8542924147152971936
+    second: imagenes_71
+  - first:
+      213: 2174746851394493113
+    second: imagenes_72
+  - first:
+      213: -5649828639414280913
+    second: imagenes_73
+  - first:
+      213: 3113009685979865848
+    second: imagenes_74
+  - first:
+      213: -137930604853548171
+    second: imagenes_75
+  - first:
+      213: -1283786168970649369
+    second: imagenes_76
+  - first:
+      213: -3183674387432703515
+    second: imagenes_77
+  - first:
+      213: 1713511677309718006
+    second: imagenes_78
+  - first:
+      213: 717489633165754211
+    second: imagenes_79
+  - first:
+      213: -8568096182404650924
+    second: imagenes_80
+  - first:
+      213: -4050713015700002792
+    second: imagenes_81
+  - first:
+      213: 6009606204373867555
+    second: imagenes_82
+  - first:
+      213: 3714455109690028026
+    second: imagenes_83
+  - first:
+      213: -5855557281459668151
+    second: imagenes_84
+  - first:
+      213: 5808236069705743365
+    second: imagenes_85
+  - first:
+      213: 3134066648734577875
+    second: imagenes_86
+  - first:
+      213: 9073372968619102094
+    second: imagenes_87
+  - first:
+      213: -747392860450585707
+    second: imagenes_88
+  - first:
+      213: 3977255914816960404
+    second: imagenes_89
+  - first:
+      213: -1031801122703379703
+    second: imagenes_90
+  - first:
+      213: 2198476876252701313
+    second: imagenes_91
+  - first:
+      213: 728758533422863625
+    second: imagenes_92
+  - first:
+      213: -2554706934615112592
+    second: imagenes_93
+  - first:
+      213: -4653819963338627787
+    second: imagenes_94
+  - first:
+      213: 4320958089495956667
+    second: imagenes_95
+  - first:
+      213: 8348038360601229856
+    second: imagenes_96
+  - first:
+      213: -6633923148045115888
+    second: imagenes_97
+  - first:
+      213: 8819986673029309687
+    second: imagenes_98
+  - first:
+      213: 495164575627958680
+    second: imagenes_99
+  - first:
+      213: -810309712829874123
+    second: imagenes_100
+  - first:
+      213: 9025490463419272475
+    second: imagenes_101
+  - first:
+      213: 5109088398238525807
+    second: imagenes_102
+  - first:
+      213: 7817364990751354875
+    second: imagenes_103
+  - first:
+      213: -7289329198635818318
+    second: imagenes_104
+  - first:
+      213: 4701815325559830795
+    second: imagenes_105
+  - first:
+      213: 3740223381554161660
+    second: imagenes_106
+  - first:
+      213: -3836456237761433008
+    second: imagenes_107
+  - first:
+      213: -6264216185248873143
+    second: imagenes_108
+  - first:
+      213: 1680424408463854740
+    second: imagenes_109
+  - first:
+      213: 1685410593053767361
+    second: imagenes_110
+  - first:
+      213: -2925233317453747243
+    second: imagenes_111
+  - first:
+      213: -6369098247384647338
+    second: imagenes_112
+  - first:
+      213: 5779879464303233423
+    second: imagenes_113
+  - first:
+      213: -7411690986323382139
+    second: imagenes_114
+  - first:
+      213: -1003135807750869144
+    second: imagenes_115
+  - first:
+      213: -6731732758673441337
+    second: imagenes_116
+  - first:
+      213: 4007608518919747895
+    second: imagenes_117
+  - first:
+      213: 2461953094974917798
+    second: imagenes_118
+  - first:
+      213: 321908118474269941
+    second: imagenes_119
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -46,7 +406,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -327,8 +687,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 192
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,8 +708,8 @@ TextureImporter:
         serializedVersion: 2
         x: 64
         y: 192
-        width: 64
-        height: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -808,7 +1168,7 @@ TextureImporter:
       name: imagenes_112
       rect:
         serializedVersion: 2
-        x: 128
+        x: 127
         y: 0
         width: 64
         height: 64
@@ -926,6 +1286,132 @@ TextureImporter:
       bones: []
       spriteID: 5f429fb6ab5a77400800000000000000
       internalID: 321908118474269941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imagenes_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5736d3fd1ff7c52d0800000000000000
+      internalID: -3288612951078116491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imagenes_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3a02f49463af000800000000000000
+      internalID: 70428432665715675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imagenes_26
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fd7bc0901255c50800000000000000
+      internalID: 6653260347261574993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imagenes_27
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2a89e469d6c3c60800000000000000
+      internalID: 7799229147030004393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imagenes_37
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46875f9659739dd00800000000000000
+      internalID: 997889907306625124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: imagenes_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b9f5cc41f4f7500800000000000000
+      internalID: 396122242978651001
       vertices: []
       indices: 
       edges: []
