@@ -93,9 +93,10 @@ GameObject:
   - component: {fileID: 2704329013520943390}
   - component: {fileID: 5924603572304755050}
   - component: {fileID: 1759455198101342746}
+  - component: {fileID: -5151118722126738308}
   m_Layer: 0
   m_Name: StrongEnemy3
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162,3 +163,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5151118722126738308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7913298356310475281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4175bb57674843aa9bd391418bf4360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  health: 1
+  scorePoints: 100

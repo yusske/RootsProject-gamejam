@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 389962903822154358}
   - component: {fileID: 346435684771860853}
   - component: {fileID: 2024147117479812214}
+  - component: {fileID: -8227325381152021948}
   m_Layer: 0
   m_Name: StrongEnemy2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,6 +81,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7199388, y: 0.7199388}
   m_EdgeRadius: 0
+--- !u!114 &-8227325381152021948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3786268728704409812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4175bb57674843aa9bd391418bf4360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  health: 1
+  scorePoints: 100
 --- !u!1 &4421024709172813171
 GameObject:
   m_ObjectHideFlags: 0

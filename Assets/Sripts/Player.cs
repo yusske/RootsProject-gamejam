@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     [SerializeField] float slowRate = 0.1f;
     [SerializeField] int extraPoints = 500;
     [SerializeField] float stepper = 0.1f;
+    [SerializeField] int choke = 0;
 
     bool gunLoaded = true;
     public int Health {
@@ -88,11 +89,12 @@ public class Player : MonoBehaviour
             switch (other.GetComponent<PowerUp>().powerUpType)
             {
                 case PowerUp.PowerUpType.IncreaseHealth:
-                    if (health < 3)
+                    choke++;
+                    while (Health < 3 && choke==5)
                     {
-                        health+=health;
+                        Health++;
+                        choke= 0;
                     }
-                    //health+=;
                     break;
                 case PowerUp.PowerUpType.ReduceSpeed:
                     //powerShotEnabled = true;
