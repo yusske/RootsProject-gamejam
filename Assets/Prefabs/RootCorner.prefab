@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5300866080163602491}
   - component: {fileID: 3036713504372058329}
+  - component: {fileID: -9183259440246203871}
   m_Layer: 0
   m_Name: RootCorner
   m_TagString: Untagged
@@ -70,8 +71,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 5988927973344483825, guid: 7128a7d9477f4974c975a1bd29838989, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: -3222170325839813511, guid: 3d5a21a5c63674d5db5a8a14db298e81, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,3 +83,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-9183259440246203871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5658571543106421569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a520671cd54d4e96aa07fc46d29d80e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

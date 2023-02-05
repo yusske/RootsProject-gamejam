@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] bool isSlow;
     [SerializeField] float slowRate = 0.1f;
     [SerializeField] int extraPoints = 500;
+     [SerializeField] GameObject[] rootPrefabs;
+     [SerializeField] GameObject codito;
 
     bool gunLoaded = true;
     public int Health {
@@ -54,12 +56,7 @@ public class Player : MonoBehaviour
      IEnumerator move()
     {
         while (true){
-
-        float aspeed = 1.0f/GameManager.Instance.gameDifficulty;
-
-        yield return new WaitForSeconds(aspeed);
-
-   
+            yield return new WaitForSeconds(1.0f/GameManager.Instance.gameDifficulty);
         if(horizontal != 0 && lockHorizontal==0)
         {
             float sign = Mathf.Sign(horizontal);
@@ -69,22 +66,22 @@ public class Player : MonoBehaviour
             else {
                  transform.rotation = Quaternion.Euler(new Vector3(0,0,90));
             }
+            Instantiate(codito);
             lockHorizontal = sign;
             lockVertical= 0;
         } else if(vertical < 0 && lockVertical == 0){
             lockHorizontal = 0;
-            lockVertical = Mathf.Sign(vertical);
+            lockVertical = -1;
+             Instantiate(codito);
             transform.rotation = Quaternion.Euler(new Vector3(0,0,0));
 
+        } else {
+            int random =  Random.Range(0, 3);
+            Instantiate(rootPrefabs[random]);
         }
         moveDirection.x = lockHorizontal;
         moveDirection.y = lockVertical;
-        /*if(isSlow){
-            transform.position += moveDirection * Time.deltaTime * ((speed+ GameManager.Instance.gameDifficulty) * slowRate);
-            
-        } else{
-        }*/
-            transform.position += moveDirection; //* Time.deltaTime * (speed + GameManager.Instance.gameDifficulty) ;
+        transform.position += moveDirection;
         }
     }
 
