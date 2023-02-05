@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 389962903822154358}
   - component: {fileID: 346435684771860853}
   - component: {fileID: 2024147117479812214}
-  - component: {fileID: -8227325381152021948}
   m_Layer: 0
   m_Name: StrongEnemy2
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +67,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000014901161, y: 0.0024386644}
+  m_Offset: {x: 0, y: 0.010349482}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -79,23 +78,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.63766646, y: 0.63450193}
+  m_Size: {x: 0.7199388, y: 0.7199388}
   m_EdgeRadius: 0
---- !u!114 &-8227325381152021948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3786268728704409812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4175bb57674843aa9bd391418bf4360, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  health: 1
-  scorePoints: 100
 --- !u!1 &4421024709172813171
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,13 +150,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -3315959160094217771, guid: fdd8d436c14e43840af0d4e3a4440f64, type: 3}
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 6c6679266ca829e4d8f6d06f4891f48c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.64, y: 0.64}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
