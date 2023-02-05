@@ -88,6 +88,10 @@ public class Player : MonoBehaviour
             switch (other.GetComponent<PowerUp>().powerUpType)
             {
                 case PowerUp.PowerUpType.IncreaseHealth:
+                    if (health < 3)
+                    {
+                        health+=health;
+                    }
                     //health+=;
                     break;
                 case PowerUp.PowerUpType.ReduceSpeed:

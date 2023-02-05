@@ -742,6 +742,12 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 5461814914863181938, guid: bee42f437abbf489ba49ebcd45a54c8b, type: 3}
   - {fileID: 3710493152874200317, guid: 49c3a5efa52e0408a9fe6d2ab6540d01, type: 3}
+  - {fileID: 9010120310867550525, guid: 2ae93f73b7c9faf4e8d8f870e8f33478, type: 3}
+  - {fileID: 2536907590819127023, guid: b3f5bd93a1fb11b4db2a35a821130110, type: 3}
+  - {fileID: 6977256225485724502, guid: e7c9b9448d677b547a2e312cc5c200ac, type: 3}
+  - {fileID: 1188021420188817325, guid: a54c13e6d416dfe4692f0aa888e00531, type: 3}
+  - {fileID: 3786268728704409812, guid: 91c604d89144ad94cae2cff26f19f7ef, type: 3}
+  - {fileID: 7913298356310475281, guid: f8567a4da16c76947a3f1017bac5151a, type: 3}
 --- !u!4 &240352193
 Transform:
   m_ObjectHideFlags: 0
